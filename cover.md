@@ -1,4 +1,6 @@
-# jenkins operator
+<h1 align="center">jenkins operator</h1>
+
+![Logo](_images/logo.png)
 ### Overview
 The Jenkins Operator is a Kubernetes Native Operator which manages operations for Jenkins on Kubernetes. It has been built with Immutability and declarative Configuration as Code in mind. The Jenkins Operator is easy to install with just a few manifest and allows users to configure and manage Jenkins on Kubernetes.
 

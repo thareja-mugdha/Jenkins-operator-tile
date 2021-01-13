@@ -1,0 +1,34 @@
+{
+  "name": "Jenkins Operator",
+  "description": "Jenkins Operator",
+  "logo": "_images/SalesStack.png",
+  "has_supporting_content": true,
+  "stack_id": "jenkins-operator",
+  "type": "stack",
+  "categories": ["Integration & Delivery"],
+  "platform": "Kubernetes",
+  "cover": "cover.md",
+  "meta": {
+    "Type":[
+         "Operators"
+      ],
+    "Install time": ["5 minutes"]
+  },
+"deployment_information": {
+  "Operator Project": "N/A",
+  "Deployment Namespace": "my-jenkins-operator"
+},
+  "commands": [
+    {
+      "description": "Install Operator",
+      "exec": "kubectl create -f https://operatorhub.io/install/jenkins-operator.yaml"
+    }
+  ],
+  "display": [
+    {
+      "name": "Developer Dashboard",
+      "url": "##DNS.host##/codeserver",
+      "enabled": true
+    }
+  ]
+}

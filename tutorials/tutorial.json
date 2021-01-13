@@ -1,0 +1,46 @@
+{
+   "name":"MinIO Operator Tutorial",
+   "appLayout":"accordion",
+   "appTheme":"g90",
+   "footer":"footer.md",
+   "tutorials":[
+      {
+         "description":" A User Guide for verification of Jenkins Operator Installation",
+         "duration":"5 min",
+         "tutorial_name":"operator-installation-verification-tutorial.md",
+         "title":"Jenkins Operator Installation Verification Tutorial"
+      },
+      {
+         "description":" Jenkins Instance Creation tutorial",
+         "duration":"5 min",
+         "tutorial_name":"jenkins-instance-creation-tutorial.md",
+         "title":"Jenkins Instance Creation tutorial"
+      },
+      {
+         "description":"How to Manually Update Jenkins Plugins",
+         "duration":"5 min",
+         "tutorial_name":"jenkins-plugins.md",
+         "title":"Manually Update Jenkins Plugins"
+      },
+      {
+         "description":"How to Create Jenkins Pipelines",
+         "duration":"15 min",
+         "tutorial_name":"jenkins-pipeline.md",
+         "title":"Create Jenkins Pipelines"
+      },
+      {
+         "description":"How to cleanup Jenkins Operator",
+         "duration":"5 min",
+         "tutorial_name":"cleanup.md",
+         "title":"Cleanup Tutorial"
+      }
+      
+   ],
+   "usefulLinks":[
+      {
+         "title":"MinIO Operator",
+         "description":"MinIO Operator ",
+         "url":"https://operatorhub.io/operator/minio-operator"
+      }
+   ]
+}

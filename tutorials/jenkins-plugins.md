@@ -6,6 +6,8 @@ description: This tutorial explains how to manually update Jenkins Plugins.
 
 ### Manually Update Jenkins Plugins 
 
+You can manually update the Jenkins plugins in the UI
+
 **Step 1:** Click on `Manage Jenkins`
 
 ![](_images/manage-jenkins.png)

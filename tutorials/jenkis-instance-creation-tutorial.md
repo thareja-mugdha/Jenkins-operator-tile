@@ -91,7 +91,7 @@ jenkins-operator-8876496-xn4jv   1/1     Running   0          2m54s
 
 To access Jenkins externally, lets first update service to use NodePort:
 
-* Execute below command to use NodePort:
+**Execute below command to use NodePort:**
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -105,7 +105,7 @@ Output:
 service/jenkins-operator-http-example patched
 ```
 
-* Execute below command to update NodePort to 32379:
+**Execute below command to update NodePort to 32379:**
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml

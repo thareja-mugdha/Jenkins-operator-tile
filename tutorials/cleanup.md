@@ -6,7 +6,9 @@ description: This tutorial explains how to cleanup Operator
 
 ### Cleaning Up Operator
 
-**Delete the operator's CRs by kubectl delete commands :**
+Click on the below commands to copy them and make changes according to your yaml file names before executing them.
+
+**Delete the operator's Custom Resources by kubectl delete commands :**
 
  ```copycommand
  kubectl delete -f jenkins-instance.yaml -n my-jenkins-operator

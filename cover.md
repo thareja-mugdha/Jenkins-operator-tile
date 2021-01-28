@@ -1,8 +1,8 @@
-<h1 align="center">jenkins operator</h1>
+<h1 align="center">Jenkins operator</h1>
 
 ![Logo](_images/logo.png)
 ### Overview
-The Jenkins Operator is a Kubernetes Native Operator which manages operations for Jenkins on Kubernetes. It has been built with Immutability and declarative Configuration as Code in mind. The Jenkins Operator is easy to install with just a few manifest and allows users to configure and manage Jenkins on Kubernetes.
+The Jenkins Operator is a Kubernetes Native Operator which manages operations for Jenkins on Kubernetes. It has been built with immutability and declarative configuration as code in mind. The Jenkins Operator is easy to install with just a few manifest and allows users to configure and manage Jenkins on Kubernetes.
 
 Out of the box it provides:
 
@@ -11,10 +11,7 @@ Out of the box it provides:
 - Extensibility via Groovy Scripts
 - Secure Defaults and Hardening
 
-
-**jenkins-operator:**
-
-With the standard Jenkins deployment we face lot of problems . We want to make Jenkins more robust, suitable for dynamic and multi-tenant environments where Jenkins Operator helps.
+There were lot of problems with the standard Jenkins deployment. Jenkins Operator helps to make Jenkins more robust, suitable for dynamic and multi-tenant environments.
 
 Below are problems which will get solved with Jenkins Operator
 
@@ -27,15 +24,21 @@ Below are problems which will get solved with Jenkins Operator
 - Handle graceful shutdown properly
 - Proper end to end tests for Jenkins lifecycle
 
-**Architecture and design:**
-Jenkins Operator fundamentals
+### Architecture
 
 The Jenkins Operator design incorporates the following concepts:
 
 - Watches any changes of manifests and maintain the desired state according to deployed custom resource manifest
-- Implements the main reconciliation loop which consists of two smaller reconciliation loops - base and user
+- Implements the main reconciliation loop which consists of two smaller reconciliation loops - **base** and **user**
+
+![](_images/jenkins-workflow.png)
+
+**Base** reconciliation phase is responsible for ensuring base Jenkins configuration, like Jenkins Master pod, plugins, hardening, etc.
+**User** reconciliation phase is responsible for ensuring user-provided configuration, like custom Groovy scripts of Configuration as Code plugin files.
 
 ![](_images/Architecture.PNG)
+
+For more details please take a look at [Architecture and Design](https://jenkinsci.github.io/kubernetes-operator/docs/how-it-works/architecture-and-design/) section.
 
 ### Objective of tutorial
 

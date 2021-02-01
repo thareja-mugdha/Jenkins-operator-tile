@@ -1,7 +1,7 @@
 {
   "name": "Jenkins Operator",
   "description": "Jenkins Operator",
-  "logo": "_images/jenkins-logo.jpg",
+  "logo": "_images/jenkins-logo-1.jpg",
   "has_supporting_content": true,
   "stack_id": "jenkins-operator",
   "type": "stack",

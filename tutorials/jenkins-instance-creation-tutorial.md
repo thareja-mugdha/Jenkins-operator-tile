@@ -63,7 +63,7 @@ Sample output:
 jenkins.jenkins.io/example created
 ```
 
-**Step 3:** Watch the Jenkins instance being created:.
+**Step 3:** Watch the Jenkins instance being created:
 
 ```execute
 kubectl get pods -n my-jenkins-operator
